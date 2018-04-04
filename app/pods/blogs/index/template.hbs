@@ -1,0 +1,4 @@
+<h1>All Blogs</h1>
+{{#each model as |blog|}}
+    <li>{{#link-to 'blogs.detail' blog.id}}{{blog.title}}{{/link-to}}</li>
+{{/each}}

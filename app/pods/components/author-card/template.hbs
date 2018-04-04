@@ -1,0 +1,15 @@
+<div class="container">
+    <div>
+        {{#link-to 'authors.detail' author.id}}
+            <img src="{{author.photo}}" alt="{{author.name}}">
+        {{/link-to}}
+    </div>  
+    <div class="author-name">{{author.fullName}}</div>
+    <span>
+        <div>{{author.country}}</div> 
+    </span>
+        <div class="buttons"><button {{action onDelete}}>delete</button></div>
+        <div class="buttons">{{#link-to 'authors.edit' author.id tagName='button'}}Edit{{/link-to}}</div>
+    
+</div>
+ 

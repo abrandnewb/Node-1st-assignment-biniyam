@@ -1,0 +1,12 @@
+<h1>{{model.title}}</h1>
+<p>{{model.dateFormated}}</p>
+<p>{{model.date}}</p>
+<p>By {{#link-to 'authors.detail' model.author.id}}{{model.author.fullName}}{{/link-to}}</p>
+<p>{{model.body}}</p>
+
+<h3>Comments</h3>
+{{#each model.comment as |comment|}}
+    <div>{{comment.date}}</div>
+    <div>{{comment.body}}</div>
+    <hr>
+{{/each}}

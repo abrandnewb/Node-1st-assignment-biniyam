@@ -1,0 +1,6 @@
+{{outlet}}
+{{#each model as |comment|}}
+<p>{{comment.date}}</p>
+<p>{{comment.body}}</p>
+<button {{action 'deleteComment' comment}}>delete</button>
+{{/each}}

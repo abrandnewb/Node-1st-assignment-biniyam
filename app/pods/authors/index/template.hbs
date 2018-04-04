@@ -1,0 +1,16 @@
+{{outlet}}
+{{#each model as |author|}}
+    {{author-card author=author 
+        onDelete = (route-action 'deleteAuthor' author)
+    }}        
+{{/each}}
+
+<h3>Test lists - acceptance testing</h3>
+<ul class="testing-lists">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+    <li>five</li>
+</ul>
+

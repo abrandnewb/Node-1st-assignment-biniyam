@@ -1,0 +1,8 @@
+<img src="{{model.photo}}" alt="{{model.fullName}}">
+<h1>{{model.fullName}}</h1>
+<p>{{model.bio}}</p>
+
+<h3>Blogs</h3>
+{{#each model.blog as |blog|}}
+<li>{{#link-to 'blogs.detail' blog.id}}{{blog.title}}{{/link-to}}</li>
+{{/each}}

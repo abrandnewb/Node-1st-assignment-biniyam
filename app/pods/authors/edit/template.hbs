@@ -1,0 +1,9 @@
+<h1>Edit Author</h1>
+
+<p>First Name {{input value=model.firstName}}</p>
+<p>Last Name {{input value=model.lastName}}</p>
+<p>Photo URL{{input value=model.photo}}</p>
+<p>Biography </p><p>{{textarea cols="30" rows="10" value=model.bio}}</p>
+
+<button {{action 'editAuthor' model}}>Save</button>
+

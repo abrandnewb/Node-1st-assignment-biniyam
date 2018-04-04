@@ -1,0 +1,61 @@
+& {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+  .title {
+    color: green;
+    line-height: 1.2;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+      fill: currentColor;
+      height: 40px;
+      width: 40px;
+      margin: 0;
+      margin-right: 5px;
+      order: -1;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin: 0;
+
+    * + * {
+      margin-left: 10px;
+    }
+  }
+}
+
+&.small {
+  .title {
+    font-size: 18px;
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+&.dark-gray {
+  .title {
+    color: darkgray;
+  }
+}
+
+&.icon-right {
+  .title {
+    svg {
+      margin: 0;
+      margin-left: 5px;
+      order: 1;
+    }
+  }
+}

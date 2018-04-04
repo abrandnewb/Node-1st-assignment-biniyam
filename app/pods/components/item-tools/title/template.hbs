@@ -1,0 +1,11 @@
+<div class="title">
+  {{#if icon}}
+    {{svg-jar icon}}
+  {{/if}}
+  {{title}}
+</div>
+<div class="row">
+  {{yield (hash
+    meta=(component 'item-tools/title' type="small dark-gray")
+  )}}
+</div>
